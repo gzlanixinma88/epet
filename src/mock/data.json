@@ -2710,367 +2710,367 @@
       {
         "order": "A",
         "list": [
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2013-01/18/16b0a6dd2bc28ee4809ac8945bc8f282.jpg",
-            "name": "艾尔",
-            "address": "中国",
-            "brandid": "1",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2012-12/19/f92c8f39a5bbe5d98364a83c6a4cdd35.jpg",
-            "name": "爱丽思IRIS",
-            "address": "日本",
-            "brandid": "30",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "30"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/eaf71f0de8b9f253e5d9cb1421fc7672.jpg",
-            "name": "Amycarol",
-            "address": "台湾",
-            "brandid": "57",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "57"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-11/16/14/7ef1de5d23b850e0b3c0a490c259fbf5.jpg",
-            "name": "爱慕ElmPet",
-            "address": "中国",
-            "brandid": "172",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "172"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f9defd4ee9d5d58ed017fb32c355dbb7.jpg",
-            "name": "澳路雪",
-            "address": "中国",
-            "brandid": "199",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "199"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/2016-08/18/16/c997f3ae79a7568cf7b6dde5c7b7f8b1.jpg",
-            "name": "Annamaet",
-            "address": "美国",
-            "brandid": "259",
-            "recommend": 0,
-            "tagongyi": 1,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "259"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-10/26/8/2386d782b3124d9aa62eccb238fbf9ac.png",
-            "name": "爱宝嘉",
-            "address": "中国",
-            "brandid": "275",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "275"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2013-01/24/6628946f412b4bf0f1266c0caf42cc2c.jpg",
-            "name": "爱肯DO-K",
-            "address": "美国",
-            "brandid": "323",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "323"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/78d4c2e4249fa6722ad4a60e0e3cceb9.jpg",
-            "name": "爱犬岛",
-            "address": "美国",
-            "brandid": "337",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "337"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/16/0c858d3e3373a1845bb94b685a1474f8.jpg",
-            "name": "AKC",
-            "address": "美国",
-            "brandid": "347",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "347"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg",
-            "name": "爱肯拿Acana",
-            "address": "加拿大",
-            "brandid": "413",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "413"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/2c464bda0b9b3872041075ebb0fbc13d.jpg",
-            "name": "爱普士Applaws",
-            "address": "英国",
-            "brandid": "827",
-            "recommend": 1,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "827"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/92fbaaa1260480fd9f97fa63ccd1fc7b.jpg",
-            "name": "爱喜雅",
-            "address": "日本",
-            "brandid": "853",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "853"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-08/11/8/22c60ba0f1f83c6613627c1aaa22c806.jpg",
-            "name": "欧维华AVEVA",
-            "address": "法国",
-            "brandid": "924",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "924"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-08/31/12/18b349bfa793c6869f64241c197fdfea.jpg",
-            "name": "安蔻儿ANCOL",
-            "address": "英国",
-            "brandid": "944",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "944"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-08/12/10/0f8170aae7f1f7d70523f4304a225833.jpg",
-            "name": "AFP",
-            "address": "美国",
-            "brandid": "952",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "952"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/16/c56a4e2213f80a6fcb24ae99fdeca27b.jpg",
-            "name": "埃尔西博士",
-            "address": "美国",
-            "brandid": "993",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "993"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-08/27/18/62a44cb4b44e1c1d65ce78d2e4babcfc.jpg",
-            "name": "阿凡提",
-            "address": "中国",
-            "brandid": "1112",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1112"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/e74875e802a7ff99b9ed2cb5c49b6f45.jpg",
-            "name": "爱诗碧Espree",
-            "address": "美国",
-            "brandid": "1208",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1208"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/023e201394aa744a6b1e6360cafd8413.jpg",
-            "name": "爱诺Eminent",
-            "address": "捷克",
-            "brandid": "1253",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1253"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/16/66c24ca0b8c2afd86c6a434c75addbe8.jpg",
-            "name": "安可Encore",
-            "address": "英国",
-            "brandid": "1393",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1393"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2017-02/20/18/06f6000d0b3f6db8d7d2fdd8713df80d.jpg",
-            "name": "Everytime爱戴",
-            "address": "中国",
-            "brandid": "1520",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1520"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2017-08/17/15/9f30b780341bb17efa18095f7e602134.jpg",
-            "name": "艾柯",
-            "address": "新加坡",
-            "brandid": "1613",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1613"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2018-01/11/14/8f2882460ca34d3dd96fad84a1e21681.jpg",
-            "name": "阿飞和巴弟",
-            "address": "中国",
-            "brandid": "1622",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1622"
-            }
-          },
-          {
-            "logo": "https://static.epetbar.com/static_wap/appmall/brand/brand_default.jpg?",
-            "name": "alcott",
-            "address": "美国",
-            "brandid": "1632",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1632"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2017-12/06/11/1ec16dfe678240c3f10e90e344176cd7.jpg",
-            "name": "爱谛 iti",
-            "address": "新西兰",
-            "brandid": "1946",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "1946"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2018-03/12/10/77f893ad25959010b23833c5acc280bb.jpg",
-            "name": "艾禾美",
-            "address": "美国",
-            "brandid": "2050",
-            "recommend": 1,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "2050"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2018-03/06/15/3ad284efd27e12bbf69e34c659e84b25.jpg",
-            "name": "爱简",
-            "address": "中国",
-            "brandid": "2051",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "2051"
-            }
-          },
-          {
-            "logo": "https://img2.epetbar.com/nowater/brand_logo/2018-02/02/09/57ee5192725763ddbf03b5f04a3cad09.jpg",
-            "name": "爱慕思IAMS",
-            "address": "美国",
-            "brandid": "2059",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "2059"
-            }
-          },
-          {
-            "logo": "https://static.epetbar.com/static_wap/appmall/brand/brand_default.jpg?",
-            "name": "艾沐",
-            "address": "中国",
-            "brandid": "2066",
-            "recommend": 0,
-            "tagongyi": 0,
-            "target": {
-              "mode": "brand_homepage",
-              "param": "2066"
-            }
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2013-01/18/16b0a6dd2bc28ee4809ac8945bc8f282.jpg",
+          "name": "艾尔",
+          "address": "中国",
+          "brandid": "1",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1"
           }
-        ]
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2012-12/19/f92c8f39a5bbe5d98364a83c6a4cdd35.jpg",
+          "name": "爱丽思IRIS",
+          "address": "日本",
+          "brandid": "30",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "30"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/eaf71f0de8b9f253e5d9cb1421fc7672.jpg",
+          "name": "Amycarol",
+          "address": "台湾",
+          "brandid": "57",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "57"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-11/16/14/7ef1de5d23b850e0b3c0a490c259fbf5.jpg",
+          "name": "爱慕ElmPet",
+          "address": "中国",
+          "brandid": "172",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "172"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f9defd4ee9d5d58ed017fb32c355dbb7.jpg",
+          "name": "澳路雪",
+          "address": "中国",
+          "brandid": "199",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "199"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/2016-08/18/16/c997f3ae79a7568cf7b6dde5c7b7f8b1.jpg",
+          "name": "Annamaet",
+          "address": "美国",
+          "brandid": "259",
+          "recommend": 0,
+          "tagongyi": 1,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "259"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-10/26/8/2386d782b3124d9aa62eccb238fbf9ac.png",
+          "name": "爱宝嘉",
+          "address": "中国",
+          "brandid": "275",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "275"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2013-01/24/6628946f412b4bf0f1266c0caf42cc2c.jpg",
+          "name": "爱肯DO-K",
+          "address": "美国",
+          "brandid": "323",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "323"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/78d4c2e4249fa6722ad4a60e0e3cceb9.jpg",
+          "name": "爱犬岛",
+          "address": "美国",
+          "brandid": "337",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "337"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/16/0c858d3e3373a1845bb94b685a1474f8.jpg",
+          "name": "AKC",
+          "address": "美国",
+          "brandid": "347",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "347"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg",
+          "name": "爱肯拿Acana",
+          "address": "加拿大",
+          "brandid": "413",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "413"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/2c464bda0b9b3872041075ebb0fbc13d.jpg",
+          "name": "爱普士Applaws",
+          "address": "英国",
+          "brandid": "827",
+          "recommend": 1,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "827"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/92fbaaa1260480fd9f97fa63ccd1fc7b.jpg",
+          "name": "爱喜雅",
+          "address": "日本",
+          "brandid": "853",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "853"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-08/11/8/22c60ba0f1f83c6613627c1aaa22c806.jpg",
+          "name": "欧维华AVEVA",
+          "address": "法国",
+          "brandid": "924",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "924"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-08/31/12/18b349bfa793c6869f64241c197fdfea.jpg",
+          "name": "安蔻儿ANCOL",
+          "address": "英国",
+          "brandid": "944",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "944"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-08/12/10/0f8170aae7f1f7d70523f4304a225833.jpg",
+          "name": "AFP",
+          "address": "美国",
+          "brandid": "952",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "952"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/16/c56a4e2213f80a6fcb24ae99fdeca27b.jpg",
+          "name": "埃尔西博士",
+          "address": "美国",
+          "brandid": "993",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "993"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2015-08/27/18/62a44cb4b44e1c1d65ce78d2e4babcfc.jpg",
+          "name": "阿凡提",
+          "address": "中国",
+          "brandid": "1112",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1112"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/e74875e802a7ff99b9ed2cb5c49b6f45.jpg",
+          "name": "爱诗碧Espree",
+          "address": "美国",
+          "brandid": "1208",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1208"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/023e201394aa744a6b1e6360cafd8413.jpg",
+          "name": "爱诺Eminent",
+          "address": "捷克",
+          "brandid": "1253",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1253"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2016-08/12/16/66c24ca0b8c2afd86c6a434c75addbe8.jpg",
+          "name": "安可Encore",
+          "address": "英国",
+          "brandid": "1393",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1393"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2017-02/20/18/06f6000d0b3f6db8d7d2fdd8713df80d.jpg",
+          "name": "Everytime爱戴",
+          "address": "中国",
+          "brandid": "1520",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1520"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2017-08/17/15/9f30b780341bb17efa18095f7e602134.jpg",
+          "name": "艾柯",
+          "address": "新加坡",
+          "brandid": "1613",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1613"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2018-01/11/14/8f2882460ca34d3dd96fad84a1e21681.jpg",
+          "name": "阿飞和巴弟",
+          "address": "中国",
+          "brandid": "1622",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1622"
+          }
+        },
+        {
+          "logo": "https://static.epetbar.com/static_wap/appmall/brand/brand_default.jpg?",
+          "name": "alcott",
+          "address": "美国",
+          "brandid": "1632",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1632"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2017-12/06/11/1ec16dfe678240c3f10e90e344176cd7.jpg",
+          "name": "爱谛 iti",
+          "address": "新西兰",
+          "brandid": "1946",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1946"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2018-03/12/10/77f893ad25959010b23833c5acc280bb.jpg",
+          "name": "艾禾美",
+          "address": "美国",
+          "brandid": "2050",
+          "recommend": 1,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "2050"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2018-03/06/15/3ad284efd27e12bbf69e34c659e84b25.jpg",
+          "name": "爱简",
+          "address": "中国",
+          "brandid": "2051",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "2051"
+          }
+        },
+        {
+          "logo": "https://img2.epetbar.com/nowater/brand_logo/2018-02/02/09/57ee5192725763ddbf03b5f04a3cad09.jpg",
+          "name": "爱慕思IAMS",
+          "address": "美国",
+          "brandid": "2059",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "2059"
+          }
+        },
+        {
+          "logo": "https://static.epetbar.com/static_wap/appmall/brand/brand_default.jpg?",
+          "name": "艾沐",
+          "address": "中国",
+          "brandid": "2066",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "2066"
+          }
+        }
+      ]
       },
       {
         "order": "B",

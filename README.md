@@ -8,3 +8,5 @@
   遇到的问题：
     分类页左侧滑动不了，一级路由跳转到二级路由底下的样式on丢掉了
   解决的办法：
+   :class="{on:isCurrent('/category')"
+   :class="{on:isCurrent('/category/class')||isCurrent('/category/brand')}"

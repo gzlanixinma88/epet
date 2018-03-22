@@ -95,3 +95,8 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+body,html{
+  height: 100%;
+  overflow: hidden;
+}

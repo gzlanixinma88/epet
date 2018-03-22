@@ -6,6 +6,7 @@ Vue.use(Router)
 import Home from '../pages/Home/Home'
 import Category from '../pages/Category/Category'
 import Cart from '../pages/Cart/Cart'
+import AllBrand from '../pages/AllBrand/AllBrand'
 import Profile from '../pages/Profile/Profile'
 import Brand from '../pages/Category/Brand/Brand'
 import Class from '../pages/Category/Class/Class'
@@ -50,21 +51,22 @@ export default new Router({
     },
     {
       path:'/cart',
-      component:Cart,
-      meta:{
-        showFooter: false
-      }
+      component:Cart
     },
     {
       path:'/profile',
-      component:Profile,
-      meta:{
-        showFooter: false
-      }
+      component:Profile
     },
     {
       path:'/register',
       component:Register
+    },
+    {
+      path:'/allBrand',
+      component:AllBrand,
+      meta:{
+        showFooter: true
+      }
     },
     {
       path:'/',

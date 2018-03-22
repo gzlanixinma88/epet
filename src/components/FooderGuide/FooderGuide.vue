@@ -5,7 +5,8 @@
         <i class="iconfont icon-shouye"></i>
         <span>首页</span>
       </div>
-      <div @click="goto('/category')"  class="footer-link" :class="{on:isCurrent('/category/class')||isCurrent('/category/brand')}">
+      <div @click="goto('/category')"  class="footer-link"
+           :class="{on:isCurrent('/category/class')||isCurrent('/category/brand')||isCurrent('/allBrand')}">
         <i class="iconfont icon-icon04"></i>
         <span>分类</span>
       </div>

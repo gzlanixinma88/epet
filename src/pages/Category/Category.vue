@@ -28,7 +28,7 @@
   .category
     background #fff
     box-sizing border-box
-    padding 0 0 50px 0
+    padding 0 0 46px 0
     height 100%
     .category-header
       background #fff
