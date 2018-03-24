@@ -85,6 +85,7 @@
           font-size 24px
       .footer-contenr
         bottom-border-1px(#e4e4e4)
+        overflow hidden
         height 75px
         display:flex
         text-align center

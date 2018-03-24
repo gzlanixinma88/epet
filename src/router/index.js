@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
-
+/*
+const Home =()=>import('/pages/Home/Home')*/
 import Home from '../pages/Home/Home'
 import Category from '../pages/Category/Category'
 import Cart from '../pages/Cart/Cart'
@@ -11,7 +12,6 @@ import Profile from '../pages/Profile/Profile'
 import Brand from '../pages/Category/Brand/Brand'
 import Class from '../pages/Category/Class/Class'
 import Register from '../pages/Profile/Register/Register'
-
 
 export default new Router({
   routes:[

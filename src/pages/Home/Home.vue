@@ -3,7 +3,7 @@
     <div class="home-content">
       <header class="header">
         <div class="header_advert">
-          <advert/>
+          <advert />
         </div>
         <div class="header_nav">
           <div class="header_main">
@@ -26,7 +26,7 @@
           <div class="nav">
             <div class="swiper-container  wrap_nav"  id="wrap_nav">
               <ul class="swiper-wrapper">
-                <li class="swiper-slide" v-for="(menu,index) in menus" :key="index"
+                <li class="swiper-slide" v-for="(menu,index) in homepage.menus" :key="index"
                     :class="{on:currentIndex===index}" @click="tab(index)">
                   <a href="javascript:;">
                     <span :class="{on:currentIndex===index}">{{menu.menu_name}}</span>
@@ -41,72 +41,23 @@
         <div class="content" >
           <div class="luobo swiper-container" id="luobo">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="../../common/images/banner1.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="../../common/images/banner2.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="../../common/images/banner3.jpg" alt="">
+              <div class="swiper-slide" v-for="(banner,index) in homepage.dog_banner" :key="index">
+                <img :src="banner">
               </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
+          <div class="Img">
+            <img src="https://img2.epetbar.com/nowater/2018-03/12/18/b611670706f71f0ba6937083d201996e.jpg@!water" alt="">
+          </div>
           <div class="column-nav">
             <div class="nav-list">
               <ul>
-                <li>
+                <li v-for="(item,index) in homepage.menu_list" :key="index">
                   <a href="javascript:;">
-                    <img src="../../common/images/ec.jpg" alt="">
+                    <img :src="item" alt="">
                   </a>
                 </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec2.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec2.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec2.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec2.jpg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="../../common/images/ec2.jpg" alt="">
-                  </a>
-                </li>
-
               </ul>
             </div>
           </div>
@@ -324,6 +275,9 @@
         </div>
       </div>
     </div>
+    <div class="Icon">
+      <div class="IconImg"></div>
+    </div>
   </div>
 </template>
 <script>
@@ -336,33 +290,26 @@
     data(){
       return{
         currentIndex:0,
+        isShow:false
       }
     },
     components:{
       Advert
     },
     computed:{
-      ...mapState(['menus'])
+      ...mapState(['homepage'])
     },
     methods:{
       tab(index){
         this.currentIndex =index
       },
+      toggleDetail(){
+        this.isShow = !this.isShow
+      }
     },
     mounted(){
       new BScroll('#content',{
         click:true
-      })
-      const lunBo = new Swiper('#luobo', {
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
       })
       const surPriseCon = new Swiper('#surprise-con',{
         slidesPerView:3,
@@ -386,7 +333,18 @@
           const wrapNav = new Swiper('#wrap_nav',{
             slidesPerView:5,
             freeMode:true
-        })
+          })
+          const lunBo = new Swiper('#luobo', {
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            loop: true,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+          })
       })
       })
     }
@@ -394,8 +352,22 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/styl/mixins.styl"
+
   .home
     height 100%
+    .Icon
+      .IconImg
+        position fixed
+        right 0
+        bottom 100px
+        width 41px
+        height 46px
+        background-image: url('./godog.png');
+        background-size 82px 46px
+        background-repeat no-repeat
+        animation blink 2s steps(1) infinite;
+        @keyframes blink
+          50% {background-position: -42px 0}
     .home-content
       height 100%
       .header
@@ -407,11 +379,6 @@
         width 100%
         .header_advert
           position relative
-          .advert
-            position relative
-            img
-              width 100%
-              display block
           .header-icon
             i
               position absolute
@@ -499,11 +466,18 @@
             width 100%
             img
               width 100%
+              display block
             .swiper-pagination
               .swiper-pagination-bullet-active
                 background gray
                 border-radius 10px
                 width 20px
+
+
+          .Img
+              img
+                width 100%
+                display block
           .column-nav
             width 100%
             height 180px

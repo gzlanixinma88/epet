@@ -71,7 +71,7 @@
           display flex
           flex-wrap wrap
           margin-top 15px
-          justify-content center
+          justify-content flex-start
           li
             box-sizing border-box
             margin-top 10px

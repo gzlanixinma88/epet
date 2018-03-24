@@ -129,14 +129,15 @@
             color #ff0000
             background #f3f4f5
     #category
+      box-sizing border-box
+      padding-top 40px
       height 100%
       .category-tab
-        height 100%
         float right
-        margin-left 70px
         position absolute
         top 40px
         right 0
+        left 70px
         padding-bottom 60px
         .right-wrapper
           display none

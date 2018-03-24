@@ -1,7 +1,7 @@
 
 
 export default {
-  menus:[],
+  homepage:[],
   categorys:[],
   brand:[],
   allbrands:''

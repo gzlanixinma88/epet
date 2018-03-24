@@ -2,14 +2,17 @@
   <div class="category">
     <div class="category-header">
       <div class="tabs">
-        <span @click="goto('/category/class')" :class="{on:isCurrent('/category/class')}">分类</span>
-        <span @click="goto('/category/brand')" :class="{on:isCurrent('/category/brand')}">品牌</span>
+        <router-link class="span" to="/category/class"  :class="{on:isCurrent('/category/class')}">分类</router-link>
+        <router-link class="span" to="/category/brand"  :class="{on:isCurrent('/category/brand')}">品牌</router-link>
       </div>
       <div class="search">
         <i class="iconfont icon1 icon-sousuo"></i>
       </div>
     </div>
-    <router-view/>
+    <!--复用路由组件对象, 复用路由组件获取的后台数据-->
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 <script>
@@ -46,7 +49,7 @@
         height 100%
         text-align center
         font-size 14px
-        span
+        .span
           padding 0 8px 10px
           margin 0 10px
         .on

@@ -7,8 +7,8 @@ import {
 } from './mutation-types'
 
 export default {
-  [RECEIVE_MENU](state,{menus}){
-    state.menus = menus
+  [RECEIVE_MENU](state,{homepage}){
+    state.homepage = homepage
   },
   [RECEIVE_CATEGORY](state,{categorys}){
     state.categorys = categorys

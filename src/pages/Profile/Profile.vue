@@ -3,7 +3,7 @@
     <div class="profile">
       <div class="profile-icon">
         <i class="iconfont icon-jiantou2" @click="$router.replace('/category')"></i>
-        <a href="javascript:;" @click="$router.replace('/register')">注册</a>
+        <router-link href="javascript:;" to="/register">注册</router-link>
       </div>
       <div class="profile-epet">
         <div class="epet-img">
@@ -13,13 +13,13 @@
       <div class="profile-login">
         <div class="login">
           <ul>
-            <li>
+            <li  @click="setLoginWay(true)">
               <a href="javascript:;">普通登录</a>
-              <i class="iconfont icon-xiaosanjiaoup"></i>
+              <i class="iconfont pwdL icon-xiaosanjiaoup" v-show="loginWay"></i>
             </li>
-            <li>
-              <a href="javascript:;">手机动态密码登录</a>
-              <i class="iconfont icon-xiaosanjiaoup"></i>
+            <li @click="setLoginWay(false)">
+              <a href="javascript:;" >手机动态密码登录</a>
+              <i class="iconfont pwdLo icon-xiaosanjiaoup" v-show="!loginWay"></i>
             </li>
           </ul>
         </div>
@@ -28,37 +28,43 @@
     <div class="down">
       <div class="profile-input">
         <div class="profile-content">
-          <div style="display: none" class="profile-form">
+          <div class="profile-form" v-show="loginWay">
             <div class="name">
               <i class="iconfont icon-dengluyemianyonghuming"></i>
-              <input type="text" placeholder="手机号/邮箱/用户名">
+              <input type="text" placeholder="手机号/邮箱/用户名" maxlength="11" v-model="name">
             </div>
             <div class="pwd">
               <i class="iconfont icon-mimasuo"></i>
-              <input type="password" placeholder="输入密码">
+              <input type="password" placeholder="输入密码"maxlength="10" v-model="pwd">
             </div>
           </div>
-          <div class="profile-form2">
+          <div class="profile-form2" v-show="!loginWay">
             <div class="name">
               <i class="iconfont icon-shouji"></i>
-              <input type="text" placeholder="已注册的手机号">
+              <input type="text" placeholder="已注册的手机号" maxlength="11" v-model="phone" @click="getCode">
             </div>
             <div class="pwdd">
               <i class="iconfont icon-mimasuo"></i>
-              <input type="text" placeholder="请输入图片的内容">
+              <input type="text" placeholder="请输入图片的内容" @click="changeCaptcha" v-model="textImg">
+              <div class="captcha">
+                <img class="get_verification" src="http://localhost:3000/captcha"
+                     alt="captcha" @click="changeCaptcha">
+              </div>
             </div>
             <div class="pwd">
               <i class="iconfont icon-mimasuo"></i>
-              <input type="text" placeholder="动态密码">
-              <span>获取动态密码</span>
+              <input type="text" placeholder="动态密码" v-model="code">
+              <span class="right" :class="{right_phone:rightPhone}"
+                    v-if="!computedTime" v-model="code" @click="getCode">获取动态密码</span>
+              <span disabled="disabled" class="right" v-else>已发送{{computedTime}}s</span>
             </div>
           </div>
         </div>
         <div class="profile-pass">
           <a href="javascript:;">忘记密码 ?</a>
         </div>
-        <div class="loginInput">
-          <a class="btn" href="javascript:;">登 &nbsp;&nbsp;录</a>
+        <div class="loginInput" @click="login">
+          <a class="btn" href="javascript:;" >登 &nbsp;&nbsp;录</a>
         </div>
       </div>
       <div class="empty"></div>
@@ -80,11 +86,94 @@
         </ul>
       </div>
     </div>
-
+    <alert-tip v-if="alertShow" :alertText="alertText" @click="closeTip"/>
   </div>
 </template>
 <script>
-  export default {}
+  import {sendCode} from '../../api'
+  import AlertTip from '../../components/AlertTip/AlertTip'
+  export default {
+    data(){
+      return {
+        loginWay:true,//登录的方式 true为密码登录 false为验证码登录
+        phone:'',//电话号码
+        alertText:'',//提示框文本
+        alertShow:false,//是否显示提示框
+        code:'',//短信验证码
+        name:'',//用户名
+        pwd:'',//密码
+        textImg:'',//图片验证
+        computedTime:0,//验证时间
+      }
+    },
+    methods:{
+      setLoginWay(){
+        this.loginWay = !this.loginWay
+      },
+      //关闭提示框
+      closeTip(){
+        this.alertShow = false
+      },
+      async getCode(){
+        if(this.rightPhone){
+          //开始倒计时
+          this.computeTime = 60
+          //启动循环定时器，每隔1s减少1
+          const intervalId = setInterval(()=>{
+            this.computeTime --
+            if(this.computeTime===0){
+              clearInterval(intervalId)
+            }
+          },1000)
+          //发送ajax请求，向手机发验证码
+          const result = await sendCode(this.phone)
+          if(result.code === 1){
+            clearInterval(intervalId)
+            //显示提示框
+            this.alertShow = true
+            this.alertText = result.msg
+          }
+        }
+      },
+      // 发送登录信息
+      //改变验证码的图片
+      changeCaptcha(event){
+        event.target.src = 'http://localhost:3000/captcha?time='+new Date()
+      },
+      login (){
+        if(this.loginWay){
+          if(!this.name){
+            this.alertShow = true
+            this.alertText = '请输入手机号/邮箱/用户名'
+            return
+          }else if(!this.pwd){
+            this.alertShow = true
+            this.alertText = '请输入密码'
+            return
+          }
+        }else{
+          if (!this.phone){
+            this.alertShow = true
+            this.alertText = '请输入正确手机号'
+            return
+          }else if(!(/^\d{6}$/gi.test(this.code))){
+            this.alertShow = true;
+            this.alertText = '短信验证码不正确'
+            return
+          }
+        }
+      }
+    },
+    computed:{
+      //手机号的验证
+      rightPhone(){//以1开头的十一个数字
+        return /^1\d{10}$/.test(this.phone)
+      },
+    },
+    components:{
+      AlertTip
+    }
+  }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/styl/mixins.styl"
@@ -135,12 +224,20 @@
               flex 1
               a
                 color #fff
-              .iconfont
+              .pwdL
                 position absolute
                 top 14px
                 left 73px
                 color #fff
                 font-size 40px
+              .pwdLo
+                position absolute
+                top 14px
+                right 73px
+                color #fff
+                font-size 40px
+                &.on
+                  display none
     .down
       background: #fff;
       .profile-input
@@ -191,6 +288,11 @@
               position absolute
               bottom 15px
               left 4px
+            .captcha
+              display inline-block
+              position absolute
+              top 0
+              right 0
           .pwd
             bottom-border-1px(#d0d0d0)
             i
@@ -198,17 +300,22 @@
               bottom 15px
               left 4px
               top: 16px;
-            span
+            .right
               position absolute
               top 10px
               right 0
               font-size 12px
-              width 100px
-              border 1px solid #ff0000
+              width 80px
+              border 1px solid #7e8c8d
               text-align center
-              line-height 30px
+              line-height 25px
               border-radius 5px
-              color #ff0000
+              color #7e8c8d
+              &.right_phone
+                border 1px solid #ff0000
+                color #ff0000
+          &.on
+            display none
         .profile-pass
           height 20px
           a

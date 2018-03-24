@@ -14,7 +14,7 @@ import {
 export default {
   async getMenu ({commit},callback){
     const result = await reqMenuList()
-    commit(RECEIVE_MENU,{menus:result.data})
+    commit(RECEIVE_MENU,{homepage:result.data})
     callback && callback();
   },
 

@@ -3,7 +3,7 @@
     <header-guild/>
     <div class="allBrand">
       <div class="allBrand-item">
-        <div class="allBrand-list">
+        <div class="allBrand-list" ref="box">
           <div v-for="(item, index) in allbrands.brand" :key="index">
             <h2>{{item.order}}</h2>
             <div>
@@ -11,7 +11,7 @@
                 <a href="javascript:;">
                   <div class="allBrand-tab">
                     <div>
-                      <img :src="li.logo" alt="">
+                      <img v-lazy="li.logo" alt="">
                     </div>
                   </div>
                   <div class="allBrand-test">
@@ -25,16 +25,22 @@
         </div>
       </div>
       <div class="allBrand-right">
-        <ul class="list">
-          <li :class="{active:currentIndex===index}" v-for="(item, index) in allbrands.brand"
-              :key="index" @click="handle(index)">{{item.order}}</li>
-        </ul>
-      </div>
+      <ul class="list">
+        <li :class="{active:currentIndex===index}" v-for="(item, index) in allbrands.brand"
+            :key="index" @click="handle(index)">{{item.order}}</li>
+      </ul>
+    </div>
     </div>
   </div>
 </template>
 
 <script>
+  import Vue from 'vue'
+  import VueLazyload from 'vue-lazyload'
+  import loading from '../../common/images/loading.gif'
+  Vue.use(VueLazyload,{
+    loading
+  })
   import BScroll from 'better-scroll'
   import {mapState} from 'vuex'
   import HeaderGuild from '../../components/HeaderGuide/HeaderGuide'
@@ -42,7 +48,8 @@
     name: "all-brand",
     data(){
       return{
-        currentIndex:0
+        height:[],
+        scrollY:0,
       }
     },
     components:{
@@ -50,23 +57,49 @@
     },
     computed:{
       ...mapState(['allbrands']),
+      currentIndex(){
+        const {scrollY,height} = this
+        return height.findIndex((h,index)=>{
+          return height[index]<=scrollY&&height[index+1]>scrollY;
+        })
+      }
     },
     methods:{
       handle(index){
-        this.currentIndex = index
-      }
+        const scrollY = this.height[index]
+        this.allBrandItem.scrollTo(0,-scrollY,500)
+      },
     },
     mounted(){
       this.$store.dispatch('getAllBrands',()=>{
         this.$nextTick(()=>{
           if(!this.allBrandItem){
             this.allBrandItem = new BScroll ('.allBrand-item',{
-              click:true
+              click:true,
+              probeType:3,
             })
+            this.allBrandItem.on('scroll',(p)=>{
+             this.scrollY = Math.abs(p.y);
+            });
           }else{
             this.allBrandItem.refresh()
           }
-
+          //创建height arr
+          var arr = [];
+          var top = 0
+          arr.push(top)
+          var box = this.$refs.box
+          var boxes = [].slice.call(box.children);
+          boxes.forEach(box =>{
+            top += box.clientHeight
+            arr.push(top)
+          })
+          /*boxes.reduce((preTotal,box)=>{
+            preTotal += box.clientHeight
+            arr.push(preTotal);
+            return preTotal;
+          },0);*/
+          this.height = arr;
         })
       })
 
@@ -131,6 +164,7 @@
     .allBrand-item
       height 100%
       .allBrand-list
+        padding-bottom 106px
         h2
           text-indent 15px
           color #999
